@@ -1,0 +1,119 @@
+/* menu.css */
+
+.menu-container {
+    background: linear-gradient(to bottom right, #0f172a, #1e293b, #0f172a);
+    padding: 3rem 1.5rem;
+    min-height: 100vh;
+  }
+  
+  .menu-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+  }
+  
+  .menu-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .menu-title {
+    font-size: 3rem;
+    color: #fbbf24;
+    font-family: Georgia, serif;
+    margin-bottom: 1rem;
+  }
+  
+  .menu-divider {
+    width: 100px;
+    height: 2px;
+    background: #fbbf24;
+    margin: 1rem auto;
+  }
+  
+  .menu-subtitle {
+    color: #cbd5e1;
+    font-style: italic;
+    font-size: 1.125rem;
+  }
+  
+  .menu-date {
+    color: #94a3b8;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+  }
+  
+  .menu-section {
+    margin-bottom: 4rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    color: #fbbf24;
+    text-align: center;
+    border-bottom: 1px solid rgba(251, 191, 36, 0.3);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-family: Georgia, serif;
+  }
+  
+  .menu-item {
+    background: rgba(30, 41, 59, 0.5);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(100, 116, 139, 0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    border-color: rgba(251, 191, 36, 0.5);
+    transform: translateY(-2px);
+  }
+  
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 0.5rem;
+  }
+  
+  .item-name {
+    font-size: 1.25rem;
+    color: #fef3c7;
+    font-family: Georgia, serif;
+  }
+  
+  .item-price {
+    color: #fbbf24;
+    font-weight: bold;
+    font-size: 1.125rem;
+  }
+  
+  .item-description {
+    color: #94a3b8;
+    font-style: italic;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  .menu-footer {
+    margin-top: 4rem;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.875rem;
+  }
+  
+  .menu-footer p {
+    margin: 0.5rem 0;
+  }
+  
+  .menu-footer .chef-name {
+    font-weight: 600;
+    color: #cbd5e1;
+  }
+  
+  .menu-footer .reservations {
+    font-style: italic;
+    margin-top: 1rem;
+  }

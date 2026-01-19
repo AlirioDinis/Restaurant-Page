@@ -1,0 +1,140 @@
+/* contact.css - Estilos da página de contato */
+
+.contact-container {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .contact-wrapper {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(251, 191, 36, 0.2);
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    color: #fbbf24;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .contact-divider {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #fbbf24, transparent);
+    margin: 0 auto 2.5rem;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(15, 23, 42, 0.5);
+    padding: 1.25rem;
+    border-radius: 12px;
+    border-left: 4px solid #fbbf24;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-item:hover {
+    transform: translateX(8px);
+    background: rgba(15, 23, 42, 0.8);
+    border-left-color: #fcd34d;
+    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.2);
+  }
+  
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: #0f172a;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+  
+  .contact-details {
+    flex: 1;
+  }
+  
+  .contact-label {
+    font-size: 0.875rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+  }
+  
+  .contact-value {
+    font-size: 1.125rem;
+    color: #e2e8f0;
+    font-weight: 500;
+  }
+  
+  .contact-value a {
+    color: #fbbf24;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-value a:hover {
+    color: #fcd34d;
+    text-decoration: underline;
+  }
+  
+  .contact-footer {
+    margin-top: 2.5rem;
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(251, 191, 36, 0.2);
+  }
+  
+  .contact-footer p {
+    color: #94a3b8;
+    font-size: 0.875rem;
+    font-style: italic;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 640px) {
+    .contact-wrapper {
+      padding: 2rem 1.5rem;
+    }
+  
+    .contact-title {
+      font-size: 2rem;
+    }
+  
+    .contact-item {
+      flex-direction: column;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+  
+    .contact-item:hover {
+      transform: translateY(-4px);
+    }
+  }

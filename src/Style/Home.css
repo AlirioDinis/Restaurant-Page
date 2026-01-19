@@ -1,0 +1,215 @@
+/* home.css - Estilos da página inicial */
+
+.home-container {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .home-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(251, 191, 36, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(251, 191, 36, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  
+  .home-content {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .home-hero {
+    background: rgba(30, 41, 59, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 4rem 3rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    margin-bottom: 3rem;
+  }
+  
+  .home-title {
+    font-size: 3rem;
+    color: #fbbf24;
+    font-family: Georgia, serif;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  .home-subtitle {
+    font-size: 1.5rem;
+    color: #cbd5e1;
+    font-style: italic;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-out 0.3s backwards;
+  }
+  
+  .home-divider {
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #fbbf24, transparent);
+    margin: 2rem auto;
+    animation: fadeIn 1s ease-out 0.6s backwards;
+  }
+  
+  .home-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .feature-card {
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    transition: all 0.3s ease;
+    animation: fadeInUp 1s ease-out backwards;
+  }
+  
+  .feature-card:nth-child(1) {
+    animation-delay: 0.9s;
+  }
+  
+  .feature-card:nth-child(2) {
+    animation-delay: 1.1s;
+  }
+  
+  .feature-card:nth-child(3) {
+    animation-delay: 1.3s;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-8px);
+    border-color: #fbbf24;
+    box-shadow: 0 12px 24px rgba(251, 191, 36, 0.3);
+  }
+  
+  .feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-title {
+    font-size: 1.5rem;
+    color: #fbbf24;
+    font-family: Georgia, serif;
+    margin-bottom: 0.75rem;
+  }
+  
+  .feature-description {
+    color: #94a3b8;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .home-info {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: rgba(15, 23, 42, 0.5);
+    border-radius: 16px;
+    border-left: 4px solid #fbbf24;
+    animation: fadeIn 1s ease-out 1.5s backwards;
+  }
+  
+  .home-info p {
+    color: #cbd5e1;
+    font-size: 1.125rem;
+    margin: 0.5rem 0;
+  }
+  
+  .home-info strong {
+    color: #fbbf24;
+    font-weight: 600;
+  }
+  
+  /* Animações */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .home-hero {
+      padding: 3rem 2rem;
+    }
+  
+    .home-title {
+      font-size: 2rem;
+    }
+  
+    .home-subtitle {
+      font-size: 1.25rem;
+    }
+  
+    .home-features {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-container {
+      padding: 1rem;
+    }
+  
+    .home-hero {
+      padding: 2rem 1.5rem;
+    }
+  
+    .home-title {
+      font-size: 1.5rem;
+    }
+  
+    .home-subtitle {
+      font-size: 1rem;
+    }
+  
+    .feature-icon {
+      font-size: 2.5rem;
+    }
+  }
